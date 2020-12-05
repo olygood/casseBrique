@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+canvas{
+    background: cadetblue;
+    /* dispaly-block fait la même chose que display flex */ 
+    /* display: block*/
+    margin: auto;
+    margin-top: 2rem;
+
+}
+h1{
+    color: red;
+}
