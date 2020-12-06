@@ -7,4 +7,6 @@ création de la boule<span style='background-color:#ffff;'</span>
 
 <span style="color:blue">some *This is Blue italic.* text</span>  
 <font color='red'>test blue color font</font>  
+This is *red*{: style="color: red"}.  
+
 
