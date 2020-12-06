@@ -12,5 +12,14 @@ This is *red*{: style="color: red"}.
 - ![#c5f015](https://via.placeholder.com/15/c5f015/000000?text=+) `#c5f015`  
 - ![#1589F0](https://via.placeholder.com/15/1589F0/000000?text=+) `#1589F0`  
 
+```diff
+- text in red
++ text in green
+! text in orange
+# text in gray
+@@ text in purple (and bold)@@
+```  
+
+
 
 
