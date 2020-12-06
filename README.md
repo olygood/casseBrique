@@ -31,7 +31,10 @@ This is *red*{: style="color: red"}.
 ```css
    // code for coloring
 ```
-// etc.
+// etc.  
+`#00ff00`  
+`rgba(0,0,0,1)`  
+
 
 
 
