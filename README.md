@@ -6,3 +6,12 @@ création de la boule<span style='background-color:#ffff;'</span>
 <p>Some Markdown text with <span style="color:blue">some <em>blue</em> text</span>.</p>  
 
 <span style="color:blue">some *This is Blue italic.* text</span>  
+
+    <h1>hello</h1>
+    voici une liste :
+    <ul>
+        <li>un</li>
+        <li>deux</li>
+        <li>trois</li>
+    </ul>
+    <footer>c'est loi le footer</footer>
