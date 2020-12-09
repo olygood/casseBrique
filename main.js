@@ -1,43 +1,57 @@
-console.log('hello js ')
+/**Variables Global--------------------------------------------------------------- */
 const canvas = document.getElementById('canvas1');
 const ctx = canvas.getContext('2d');
 
-/* variables-----------------------------------------------------------------------*/
-/**posiruion de départ = x, y */
-let x = canvas.width /2;
-let y = canvas.height -80;
-console.log(canvas.height);
-/**deplacement sur x et y = dx,dy */
-let dx = 1;
-let dy = -1;
+let x = canvas.width /2; //800base  :2 / 400
+let y = canvas.height -80; //600base -80/520
+
+let dx = 0;
+let dy = -3;
 
 let ballRadius = 30;
 
-console.log(document.body.children);
-/**function------------------------------------------------------------------------ */
-function drawBall(){
-ctx.clearRect(0, 0, canvas.width, canvas.height);
-ctx.beginPath();
-ctx.arc(x, y,ballRadius,0, Math.PI*2);
-ctx.fillStyle= "green";
-ctx.fill();
-ctx.closePath();
+/**function game---------------------------------------------------------------- */
+Load();
 
-x += dx;
-y += dy;
+setInterval(Run,10);
 
-
-if(y + dy > canvas.height || y + dy < 0) {
-    dy = -dy;
-}
-if(x + dx > canvas.width-ballRadius || x + dx < ballRadius) {
-    dx = -dx;
-}
-if(y + dy > canvas.height-ballRadius || y + dy < ballRadius) {
-    dy = -dy;
-}
+function Run(){
+ Update();
+ Draw();  
 
 }
-setInterval(drawBall,10);
+function Load(){
 
-/*le rebond de la ball sur les cotés */
+}
+function Update(){
+    
+}
+function Draw(){
+    
+    function DrawBall(){
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        ctx.beginPath();
+        ctx.arc(x, y,ballRadius,0, Math.PI*2);
+        ctx.fillStyle= "green";
+        ctx.fill();
+        ctx.closePath();
+        
+        x += dx;
+        y += dy;
+        
+        
+        if(y > canvas.height || y  < 0) {
+            dy = -dy;
+        }
+        if(x  > canvas.width-ballRadius || x  < ballRadius) {
+            dx = -dx;
+        }
+        if(y  > canvas.height-ballRadius || y  < ballRadius) {
+            dy = -dy;
+        }
+      
+    }
+    DrawBall();
+}
+
+
